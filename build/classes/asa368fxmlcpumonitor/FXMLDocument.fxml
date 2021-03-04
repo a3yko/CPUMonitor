@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="images" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="217.0" prefWidth="198.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="asa368fxmlcpumonitor.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="104.0" fitWidth="200.0" StackPane.alignment="TOP_CENTER">
+         <image>
+            <Image url="@guage.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hand" fitHeight="176.0" fitWidth="200.0" nodeOrientation="INHERIT" preserveRatio="true" rotate="-90.0" StackPane.alignment="TOP_CENTER">
+         <image>
+            <Image url="@hand.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label fx:id="cpu" alignment="TOP_CENTER" contentDisplay="TOP" text="0.00" />
+         </children>
+      </VBox>
+      <VBox alignment="BOTTOM_CENTER" centerShape="false" prefHeight="62.0" prefWidth="180.0" scaleShape="false" StackPane.alignment="BOTTOM_CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="0.0" prefWidth="191.0" spacing="10.0">
+               <children>
+                  <Button fx:id="startButton" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleStart" text="Start" />
+                  <Button fx:id="recordButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleRecord" text="Record" />
+               </children>
+               <padding>
+                  <Insets top="40.0" />
+               </padding>
+            </HBox>
+            <TextArea fx:id="output" prefHeight="74.0" prefWidth="179.0" wrapText="true" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </children>
+</StackPane>
